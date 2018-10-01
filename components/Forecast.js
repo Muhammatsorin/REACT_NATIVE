@@ -10,6 +10,9 @@ export default class Forecast extends React.Component {
                 <Text>{this.props.description}</Text>
                 <Text>{this.props.temp}</Text>
                 <Text>°C</Text>
+                <View style = {{flex:1 , flexDirection : 'column' , justifyContent:'flex-end' , alignItems : 'flex-end' }}>
+                    <Text style = {{fontSize:10 , color:'red'}}>มูฮำหมัดซอรีน  หะแว  5935512045</Text>
+                </View>
             </View>
         );
     }
