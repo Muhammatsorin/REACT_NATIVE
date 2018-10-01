@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     StyleSheet, FlatList, View, Text,
-    TouchableHighlight
+    TouchableHighlight , ImageBackground
 } from 'react-native';
 
 const availableZipItems = [
@@ -31,11 +31,13 @@ export default class zipCodeScreen extends React.Component {
         const { navigate } = this.props.navigation;
         return (
             <View>
+                <ImageBackground source={require('./back_g.jpg')} style={styles.backdrop}>
                 <FlatList
                     data={availableZipItems}
                     keyExtractor={_keyExtractor}
                     renderItem={({ item }) => <ZipItem {...item} navigate={navigate} />}
                 />
+                </ImageBackground>
             </View>
         );
     }
@@ -43,8 +45,10 @@ export default class zipCodeScreen extends React.Component {
 
 const styles = StyleSheet.create(
     {
+        backdrop: { width: '100%', height: '100%' },
         zipItem: { flexDirection: 'row', justifyContent: 'space-around', },
         zipPlace: { fontSize: 20, color: 'black' },
         zipCode: { fontSize: 20, color: 'black' },
+
     }
 );
