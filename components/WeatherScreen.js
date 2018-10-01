@@ -1,26 +1,3 @@
-// import React from 'react';
-// import { StyleSheet, Text, View, ImageBackground, Button } from 'react-native';
-// import Weather from './Weather';
-
-// export default class WeatherScreen extends React.Component {
-//     static navigationOptions = ({ navigation }) => {
-//         return {
-//             headerTitle: (<Text style = {styles.Title}>Weather</Text>),
-//             headerRight: (
-//                 <Button title="Change zip" onPress={() => navigation.navigate('ZipCode')}
-//                 />
-//             )
-//         }
-//     }
-//     render() {
-//         const zipCode = this.props.navigation.getParam('zipCode')
-//         return (<Weather zipCode={zipCode} />);
-//     }
-
-// }
-// const styles = StyleSheet.create (
-//     Title: {fontSize : 30 , color : 'red'} , 
-// );
 import React from 'react';
 import { StyleSheet, Text, View ,Button} from 'react-native';
 import Weather from './Weather';
@@ -49,5 +26,5 @@ export default class WeatherScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    Title: { textAlign: 'center', fontSize: 20, color: 'black' },
+    Title: { fontSize: 30, fontSize: 20, color: 'black' },
 });
