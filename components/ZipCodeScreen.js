@@ -43,8 +43,8 @@ export default class zipCodeScreen extends React.Component {
 
 const styles = StyleSheet.create(
     {
-        zipItem: {},
-        zipPlace: {},
-        zipCode: {}
+        zipItem: { flexDirection: 'row', justifyContent: 'space-around', },
+        zipPlace: { fontSize: 20, color: 'black' },
+        zipCode: { fontSize: 20, color: 'black' },
     }
 );

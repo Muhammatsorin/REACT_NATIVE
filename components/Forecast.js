@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 export default class Forecast extends React.Component {
     render() {
         return (
-            <View>
+            <View style = {{flex:1 , flexDirection: 'column' , justifyContent: 'flex-start' , alignItems: 'center' }}>
                 <Text>Zip Code Is : {this.props.zipCode}</Text>
                 <Text>{this.props.main}</Text>
                 <Text>{this.props.description}</Text>
