@@ -12,7 +12,7 @@ export default class Forecast extends React.Component {
 
         <View style={{flex:1,flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>                 
 
-            <Text>{this.props.zipcode}Zip Code Is.</Text>
+            <Text>Zip Code Is : {this.props.zipcode}.</Text>
 
             <Text>{this.props.main}</Text>                 
 
