@@ -7,7 +7,7 @@ export default class WeatherScreen extends React.Component {
         return {
             headerTitle: (<Text style={styles.Title}>Weather</Text>),
             headerStyle: {
-                backgroundColor: '#01579b' ,
+                backgroundColor: '#ff8a50' ,
             },
             
             headerRight: (
@@ -26,5 +26,5 @@ export default class WeatherScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    Title: { fontSize: 30, fontSize: 20, color: 'black' },
+    Title: { fontSize: 30, fontSize: 20, color: 'white' },
 });
